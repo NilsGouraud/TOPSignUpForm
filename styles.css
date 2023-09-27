@@ -1,16 +1,35 @@
-div *{
-    display: block;
+:root{
+    --mainColor: ;
+}
+
+
+html{
+    display: flex;
+    justify-content: center;
 }
 body{
-    display: flex;
-    flex-direction: horizontal;
+    width: 80%;
 }
-
 .bg{
-    display: block;
-    width: 30%;
-    background: url(halie-west-25xggax4bSA-unsplash.jpg);
+    position: static;
+    width: 45%;
+    height: 100vh;
+    background: url(resources/halie-west-25xggax4bSA-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45vh 100vh;
+    float: left;
 }
 main{
+    float: left;
+    width: 55%;
+}
 
+.logo{
+    font-family: "Norse-Bold.otf";
+}
+
+@font-face {
+    font-family: "Norse-Bold.otf";
+    src: url(resources/Norse-Bold.otf);
 }
