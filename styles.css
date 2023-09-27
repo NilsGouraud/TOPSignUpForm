@@ -2,7 +2,7 @@ div *{
     display: block;
 }
 body{
-    
+    display: inline-block;
 }
 
 img{
