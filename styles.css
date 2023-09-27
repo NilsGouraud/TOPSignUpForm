@@ -7,8 +7,9 @@ body{
 }
 
 .bg{
-    flex-grow: 1;
+    width: 30%;
+    background: url(halie-west-25xggax4bSA-unsplash.jpg);
 }
 main{
-    flex-grow: 2;
+
 }
