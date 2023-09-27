@@ -2,7 +2,8 @@ div *{
     display: block;
 }
 body{
-    display: inline-block;
+    display: flex;
+    flex-direction: horizontal;
 }
 
 .bg{
