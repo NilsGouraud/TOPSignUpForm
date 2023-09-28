@@ -61,14 +61,13 @@ end of reset
 
 
 html{
-    display: flex;
-    height: 100%;
     justify-content: center;
     background-color: black;
 }
 body{
-    width: 67%;
-    height: auto;
+    width: 1366px;
+    height: 768px;
+    margin:100px auto;
     background-color: white;
     display: flex;
     font-family: sans-serif;
