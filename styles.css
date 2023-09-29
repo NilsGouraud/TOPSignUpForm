@@ -83,6 +83,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    flex-direction: column;
 }
 main{
     width: 60%;
@@ -161,7 +162,8 @@ a{
     top:0px;
 }
 span{
-    color: blue;
+    color: rgb(0, 68, 255);
+    text-decoration: underline;
 }
 span:hover{
     cursor:pointer;
@@ -178,8 +180,24 @@ button:active{
 }
 
 
-.logo{
+.logoText{
     font-family: "Norse-Bold.otf";
+    color: white;
+    font-size: 10vh;
+}
+
+.bg div{
+    height: 12%;
+}
+.odin img{
+    height: 100%;
+}
+.odin{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.256);
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
 }
 
 @font-face {
@@ -194,6 +212,9 @@ button:active{
     }
     .bar{
         width: 15%;
+    }
+    main{
+        padding-top: 70px;
     }
 }
 
