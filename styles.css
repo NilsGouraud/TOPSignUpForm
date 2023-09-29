@@ -53,29 +53,32 @@ table {
 /*
 end of reset
 */
-
-
-:root{
-    --mainColor: ;
+.smallFont{
+    font-size: 0.9rem;
+}
+.bigFont{
+    font-size: 1.5rem;
+}
+.bold{
+    font-weight: 500;
 }
 
-
-html{
-    justify-content: center;
+.bar{
     background-color: black;
+    width: 20%;
+    height: auto;
 }
+
+
 body{
-    width: 1366px;
-    height: 768px;
-    margin:100px auto;
-    background-color: white;
+    height: 100vh;
+    width: 100%;
     display: flex;
-    font-family: sans-serif;
+    font-family: system-ui;
 }
 .bg{
-    position: static;
     width: 40%;
-    height: 100%;
+    height: auto;
     background: url(resources/halie-west-25xggax4bSA-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -83,15 +86,12 @@ body{
 }
 main{
     width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-    overflow: hidden;
+    padding-top: 150px;
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: auto;
 }
-form{
-    padding: 0;
-}
+
 
 section,main>h1,a{
     padding: 20px;
@@ -125,33 +125,37 @@ fieldset div{
     width: 100%;
 }
 
-.coordinates{
-    
-}
 
-.passwords{
-    
-}
 
 input{
     border-radius: 4px;
     height: 20px;
     width: 80%;
     max-width: 300px;
+    border: 1px solid  #E5E7EB;
+}
+
+input:focus{
+    border: 1px solid rgb(83, 152, 255);
+    box-shadow: 0 0 3px rgb(83, 152, 255);
+    outline: none;
 }
 
 button{
     margin-left: 20px;
-    background-color: rgb(0, 84, 0);
+    background-color: #596D48;
     padding: 10px 20px;
     font-size: 1.2rem;
     color: white;
     border-radius: 5px;
     border: none;
     box-shadow: 0 0 1px black;
+    transition: 0.2s;
 }
 button:hover{
     cursor: pointer;
+    background-color: #657a52;
+    transition: 0.2s;
 }
 a{
     top:0px;
@@ -186,8 +190,26 @@ button:active{
 
 @media all and (max-width:1366px){
     input{
-        border-radius: 4px;
         height: 18px;
-        width: 80%;
+    }
+    .bar{
+        width: 15%;
+    }
+}
+
+@media all and (max-width:850px){
+    .bar{
+        display: none;
+    }
+    .bg{
+        width: 30%;
+    }
+    main{
+        width: 70%;
+        padding-top: 20px;
+    }
+   
+    fieldset{
+        flex-direction: column;
     }
 }
